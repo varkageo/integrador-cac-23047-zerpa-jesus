@@ -1,0 +1,548 @@
+/* imports y estilos generales */
+@font-face {
+    font-family: roboto;
+    src: url(/fuentes/RobotoMono-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {list-style: none;}
+li{font-size: 1.25em;}
+
+/*-->>>>>>>>>>>>>>>  HEADER  <<<<<<<<<<<<<<<--*/
+
+/*>>>>>>    barra de navegacion   <<<<<<*/
+nav {
+    background-color: rgb(32, 37, 48);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: flex-end;
+}
+.logo img{
+    height: 115px;
+    cursor: pointer;
+    
+}
+.logo p {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    background-image: url(/img/hawaii.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.contenido-na{       
+    display: none;
+}
+.contenido-nav{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.contenido-nav .boton_menu{
+    background-color: rgb(65, 88, 114);
+    width: 300px;
+}
+.contenido-nav ul{
+    background-color: rgba(211, 211, 211, 0.76);
+}
+.contenido-nav ul .liGreenn{
+    background-color: green;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.contenido-nav ul li{
+    background-color: rgb(73, 86, 110);
+    text-align: center;
+    margin: 1px;
+    width: 300px;
+}
+.contenido-nav :first-child{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.contenido-nav :last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contenido-nav ul li:hover{
+    background-color: rgb(140, 165, 212);
+    border-radius: 0px;
+}
+.contenido-nav ul .liGreenn:hover{
+    background-color: rgb(75, 243, 75);
+    
+}
+
+.contenido-nav a {
+    text-decoration: none;
+    color: white;    
+}
+
+
+/*-->>>>>>>>>>    MAIN    <<<<<<<<<<<--*/
+
+/*  sección de las cards  */
+
+.texto_c h5{
+    text-align: end;
+    font-size: 40px;
+}
+.texto_c p{
+    text-align: end;
+}
+.texto_c button{
+    float: right;
+    margin: 3px;
+}
+
+/* esta es la 2da seccion: la de las tarjetas */
+
+.cards_level h3{
+    text-align: center;
+    font-family: roboto;
+    margin-top: 20px;
+}
+
+.cards_level h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: roboto;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+/* tarjeta 1 de steve */
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+    border: 1px solid lightgrey;
+    margin-bottom: 20px;
+}
+.card1 img{
+    margin-bottom: 10px;
+    width: 500px;
+    height: 500px;
+}
+.js{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 3px;
+    padding: 1px 4px;
+    cursor: pointer;
+}
+.rea{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(24, 187, 228);
+    color: white;
+    border-radius: 3px;
+    padding: 1px 4px;
+    cursor: pointer;
+}
+.card1 h3 {
+    font-size: 25px;
+    padding-left: 20px;
+    margin: 0;
+
+    position: relative;
+    bottom: 20px;
+}
+.card1 p{
+    padding: 20px;
+    margin: 0;
+}
+
+/* tarjeta 3 */
+
+.nego{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(124, 124, 124);
+    border-radius: 3px;
+    padding: 1px 4px;
+    color: white;
+    cursor: pointer;
+}
+.str{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 3px;
+    padding: 1px 4px;
+    cursor: pointer;
+}
+/* hawaii level 3ra parte */
+
+.hawaii_level{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.hawaii img{
+    height: 400px;
+    width: 100%;
+}
+
+.lookUp{
+    width: 80%;
+    background-color: rgb(40, 41, 54);
+}
+.lookUp h4{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.lookUp p{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.lookUp .boton_mas{
+    margin-left: 45%;
+    margin-bottom: 10px;
+}
+
+/* seccion de formulario */
+
+.formularioO .bajo{
+    text-align: center;
+    
+}
+.formularioO .bajo h3{
+    font-size: 15px;
+    font-family: roboto;
+}
+.formularioO .bajo h2{
+    font-size: 45px;
+    font-family: roboto;
+}
+fieldset .texto{
+    margin-left: 30px;
+}
+fieldset {
+    padding-left: 0%;
+    margin-left: 0%;
+}
+fieldset p{
+    text-align: center;
+}
+#lastname{
+    margin-left: 1%;
+}
+
+fieldset legend{
+    text-align: center;
+    margin: 5px;
+}
+fieldset a {
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    font-size: 20px;
+}
+fieldset h5{
+    font-size: 15px;
+    text-align: start;
+    margin-left: 35px;
+    width: 100%;
+}
+
+.button_enviar {
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    height: 40px;
+    margin-bottom: 30px;
+    background-color: green;
+    border: 2px solid green;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_enviar:hover{
+    color: black;
+    background-color: yellowgreen;
+}
+
+/* >>>>>>>>>>>>>>>   FOOTER   <<<<<<<<<<<<<<<< */
+
+footer{
+    background: rgb(42,50,57);
+    background: linear-gradient(90deg, rgba(42,50,57,1) 0%, rgba(42,42,64,1) 60%, rgba(13,93,111,1) 84%, rgba(18,93,112,1) 100%);
+}
+
+footer .final{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+footer .final{
+    margin: 5px;
+    height: 80px;
+    margin-top: 20px;
+    
+}
+footer .final div{
+    width: 100px;
+}
+footer .final a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+}
+footer .final a:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+/*ºººººººººººººººººººº    1er Punto de quiebre    ºººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº*/
+@media (min-width: 767px){
+
+    .contenido-na{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-decoration: none;
+        color: white;
+    }
+    .contenido-na ul{
+        display: flex;
+    }
+    .contenido-na ul li{
+        padding-right: 15px;
+    }
+    .contenido-na ul li a{
+        text-decoration: none;
+        color: grey;
+        font-size: 20px;
+    }
+    .contenido-na ul .liGreenn{
+        color: green;
+    }
+    .contenido-na ul .liWhite{
+        color: white;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        width: 110px;
+        height: 70px;
+    }
+    .contenido-na ul li a:hover{
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+
+    .texto_c button{
+        margin-bottom: 20%;
+    }
+
+
+}
+@media (min-width: 1200px){   /* ºººººººººººº   2do Punto de quiebre   ºººººººººººººººº*/
+
+/*-ººººººººººººººººº-  HEADER  -ºººººººººººººººººº-*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenido-nav{
+    display: none;
+}
+.contenido-na{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.contenido-na ul{
+    display: flex;
+}
+.contenido-na ul li{
+    padding-right: 15px;
+}
+.contenido-na ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+.contenido-na ul .liGreenn{
+    color: green;
+}
+.contenido-na ul .liWhite{
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 110px;
+    height: 70px;
+}
+.contenido-na ul li a:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+/*ºº------>>>---------  MAIN ---------<<<------ºº*/
+
+/*  >>>>>>>>>  seccion del carrousell  <<<<<<<<<<<<<  */
+
+.texto_c{
+    height: 500px;
+    padding-left: 300px;
+}
+.texto_c button{
+    margin-bottom: 20%;
+}
+
+
+/*   >>>>>>>>>>>>>>>>>>>>  CARDS  <<<<<<<<<<<<<<<<<<<<<<   */
+
+.cards{
+    width: 80%;
+    margin-left: 10%;
+}
+.cards_level .cards .card1 img{
+    width: 300px;
+    height: 300px;
+}
+.cards_level .cards .card1{
+    width: 300px;
+}
+
+/*  >>>>>>>>>>  seccion de hawaii  <<<<<<<<<<<  */
+
+.hawaii_level{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hawaii_level .hawaii{
+    float: left;
+    height: 100%;
+}
+.hawaii_level .hawaii img{
+    height: 100%;
+}
+.lookUp{
+    width: 100%;
+    background: linear-gradient(-45deg, #23777a, #2d3644, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+.hawaii_level .lookUp{
+    height: 100%;
+}
+.hawaii_level .lookUp h4{
+    font-size: 7em;
+    font-weight: bolder;
+    background-image: url(/img/hawaii.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.hawaii_level .lookUp p{
+    padding-top: 10%;
+}
+
+/*>>>>>>>------------  FORMULARIO  ------------<<<<<<*/
+
+.formus{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+fieldset legend{
+    font-size: 19px;
+    font-weight: lighter;
+}
+fieldset .formu input{
+    width: 49%;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.formus fieldset .formu textarea{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+.formus fieldset .formu h5{
+    margin: 0;
+}
+.formus fieldset .formu button{
+    width: 100%;
+}
+
+
+/*  >>>>>>>>>>>>>>>>    FOOTER    <<<<<<<<<<<<<<<<  */
+
+
+footer .final a{
+    font-size: 20px;
+    
+}
+
+
+}
