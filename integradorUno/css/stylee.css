@@ -1,0 +1,410 @@
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    }
+    @keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+/* imports y estilos generales */
+@font-face {
+    font-family: roboto;
+    src: url(/fuentes/RobotoMono-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {list-style: none;}
+li{font-size: 1.25em;}
+
+/*>>>>>>    barra de navegacion   <<<<<<*/
+nav {
+    background-color: rgb(32, 37, 48);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: flex-end;
+}
+.logo img{
+    height: 115px;
+    cursor: pointer;
+    
+}
+.logo p {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    background-image: url(/img/hawaii.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.contenido-na{       
+    display: none;
+}
+.contenido-nav{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.contenido-nav .boton_menu{
+    background-color: rgb(65, 88, 114);
+    width: 300px;
+}
+.contenido-nav ul{
+    background-color: rgba(211, 211, 211, 0.76);
+}
+.contenido-nav ul .liGreenn{
+    background-color: green;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.contenido-nav ul li{
+    background-color: rgb(73, 86, 110);
+    text-align: center;
+    margin: 1px;
+    width: 300px;
+}
+.contenido-nav :first-child{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.contenido-nav :last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contenido-nav ul li:hover{
+    background-color: rgb(140, 165, 212);
+    border-radius: 0px;
+}
+.contenido-nav ul .liGreenn:hover{
+    background-color: rgb(75, 243, 75);
+    
+}
+
+.contenido-nav a {
+    text-decoration: none;
+    color: white;    
+}
+
+/*<<<<<<<<<<<<<<  tarjetas >>>>>>>>>>>>>>>>*/
+
+.tarjetas11{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.tarjetas11 h2{
+    font-size: 19px;
+    font-weight: bold;
+}
+.tarjetas11 h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.tarjetas11 h4{
+    font-size: 15px;
+}
+
+.tarjetas11 .card1{
+    border: 1px solid blue;
+    padding: 20px;
+    box-shadow: 1px 1px 46px -9px rgba(0, 60, 255, 0.72);
+    
+}
+.tarjetas11 .card1:hover{
+    box-shadow: 1px 1px 108px 7px rgba(0, 140, 255, 0.479);
+}
+
+.tarjetas11 .card2{
+    border: 1px solid green;
+    padding: 20px;
+    box-shadow: 1px 1px 46px -9px rgba(51, 255, 0, 0.72);
+}
+.tarjetas11 .card2:hover{
+    box-shadow: 1px 1px 108px 7px rgba(0, 255, 76, 0.479);
+}
+
+.tarjetas11 .card3{
+    border: 1px solid rgb(214, 214, 30);
+    padding: 20px;
+    box-shadow: 1px 1px 46px -9px rgba(255, 251, 0, 0.72);
+}
+.tarjetas11 .card3:hover{
+    box-shadow: 1px 1px 108px 7px rgba(238, 255, 0, 0.479);
+}
+
+/*<<<<<<<<<<<<<<<<< FORMULARIO >>>>>>>>>>>>>>>>>>*/
+
+.venta{
+    text-align: center;
+}
+.venta p{
+    font-size: 20px;
+    color: green;
+    font-weight: bolder;
+    text-shadow: -1px 1px 15px rgb(0, 255, 0);
+}
+.venta h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.formulario{
+    padding: 0% 10% 0% 10%;
+    margin-bottom: 150px;
+}
+
+.formulario input{
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.formulario .correo{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.formulario .nombre{
+    width: 49%;
+    margin-bottom: 10px;
+}
+.formulario .apellido{
+    width: 49%;
+    float: right;
+}
+
+.formulario .both{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+.formulario .both .cantidad p{
+    margin-bottom: 0;
+}
+.formulario .both .descuentos p{
+    margin-bottom: 0;
+}
+.formulario .both .descuentos select{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.formulario .both .cantidad select{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.formulario .totalap{
+    background-color: rgb(196, 248, 248);
+    padding: 10px;
+    border: 1px solid rgb(119, 250, 255);
+    border-radius: 5px;
+}
+
+.formulario .botones{
+    display: flex;
+    justify-content: space-between;
+}
+.formulario .botones .botonform{
+    background-color: rgb(115, 190, 16);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(29, 216, 29);
+    border-radius: 5px;
+    width: 49%;
+    padding: 5px;
+}
+.formulario .botones .botonform:hover{
+    background-color: rgb(130, 235, 130);
+    color: black;
+    font-weight: bold;
+}
+
+/* >>>>>>>>>>>>>>>   FOOTER   <<<<<<<<<<<<<<<< */
+
+footer{
+    background: rgb(42,50,57);
+    background: linear-gradient(90deg, rgba(42,50,57,1) 0%, rgba(42,42,64,1) 60%, rgba(13,93,111,1) 84%, rgba(18,93,112,1) 100%);
+}
+
+footer .final{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+footer .final{
+    margin: 5px;
+    height: 80px;
+    margin-top: 20px;
+    
+}
+footer .final div{
+    width: 100px;
+}
+footer .final a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+}
+footer .final a:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+@media (min-width: 767px){
+
+    .contenido-na{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-decoration: none;
+        color: white;
+    }
+    .contenido-na ul{
+        display: flex;
+    }
+    .contenido-na ul li{
+        padding-right: 15px;
+    }
+    .contenido-na ul li a{
+        text-decoration: none;
+        color: grey;
+        font-size: 20px;
+    }
+    .contenido-na ul .liGreenn{
+        color: green;
+    }
+    .contenido-na ul .liWhite{
+        color: white;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        width: 110px;
+        height: 70px;
+    }
+    .contenido-na ul li a:hover{
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+
+    .texto_c button{
+        margin-bottom: 20%;
+    }
+
+    .tarjetas11{
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+}
+@media (min-width: 1200px){   /* ºººººººººººº   2do Punto de quiebre   ºººººººººººººººº*/
+
+/*-ººººººººººººººººº-  HEADER  -ºººººººººººººººººº-*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenido-nav{
+    display: none;
+}
+.contenido-na{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.contenido-na ul{
+    display: flex;
+}
+.contenido-na ul li{
+    padding-right: 15px;
+}
+.contenido-na ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+.contenido-na ul .liGreenn{
+    color: green;
+}
+.contenido-na ul .liWhite{
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 110px;
+    height: 70px;
+}
+.contenido-na ul li a:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.tarjetas11{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+footer .final a{
+    font-size: 20px;
+    
+}
+
+
+}
+
+
